@@ -7,5 +7,9 @@ name = "screenshot-demo"
 version = "0.1.0"
 description = "Educational screenshot demo for packaging instruction"
 requires-python = ">=3.9"
-dependencies = ["Pillow", "pyperclip"]
+dependencies = ["Pillow"]
+
+[project.scripts]
+# This creates 'run-screenshot.exe' 
+run-screenshot = "screenshot_demo:main"
 
